@@ -181,3 +181,31 @@ h4 {
     color: white;
     font-family: "New Rocker", serif;
 }
+
+@media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Mobilde daha küçük font boyutu */
+    }
+  
+    .container {
+      padding: 10px; /* Mobilde daha az padding */
+    }
+  
+    .navbar {
+      display: block; /* Menüde farklı düzen */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Mobilde öğeleri dikey yerleştir */
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  }
