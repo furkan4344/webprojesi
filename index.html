@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=New+Rocker&family=Nova+Cut&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h2>HOŞGELDİN BİZDE TAM SENİ BEKLİYORDUK</h2>
+    <h4>Şifreyi Çöz ve Zarfı Aç!</h4>
+
+    <!-- Şifre giriş alanı ve buton -->
+    <input type="password" id="sifre" placeholder="Şifreyi Girin">
+    <button onclick="kontrolEt()">Şifreyi Doğrula</button>
+
+    <!-- Kutu, şifre doğruysa görünecek -->
+    <div id="kutular">
+        <p>Uzun zamandır bu anı bekliyordum. Her şeyin bir zamanı vardı ve şimdi o an geldi. Artık ne yapman gerektiğini
+            biliyorsun. Eğer dediğimi yapmazsan, bunun bedeli ağır olur. Her adım bir sınav, her karar bir sonuç
+            doğurur. Bir hata yapman, her şeyin sonlanması demek. Zamanın kaybolmasına izin veremem. Senin hareketlerin,
+            sadece seni değil, her şeyi etkileyecek. Her adımda daha derinlere çekileceksin, belki de hiç geri
+            çıkamayacaksın. Her şeyin bir karşılığı var. Ve senin, bu karşılıkları ödemeye hazır olup olmadığını görmek
+            istiyorum. İlk ipucu sana bir şeyler gösterecek, ama bu sadece bir test. Eğer doğru adımlar atmazsan,
+            kaybolursun. Hata yapma lüksün yok. Sana vereceğim şeyler, yalnızca doğru adımlarla açığa çıkacak. Her
+            yanlış, seni daha da karanlığa çekebilir. İlerledikçe daha fazlasını göreceksin, ama farkında ol: Ne kadar
+            ilerlersen, kaybetme ihtimalin o kadar artacak. Her kararın, her hareketin, seni ve her şeyi derinden
+            etkileyecek. İleri gitmek istiyorsan, dikkatli olmalısın. Yoksa ne olacağına dair hiçbir fikrin yok. Bu
+            sadece bir başlangıç pekala şimdi devam et.</p>
+    </div>
+
+    <!-- "Devam Et" butonu başlangıçta gizli -->
+    <button id="devamButonu" style="display:none;" onclick="devamEt()">Devam Et</button>
+
+    <!-- Uyarı mesajı yanlış şifre için -->
+    <p id="uyari">Yanlış şifre! Lütfen tekrar deneyin.</p>
+
+    <p id="pisayısı">pi</p>
+</body>
+
+<script src="script.js"></script>
+
+</html>

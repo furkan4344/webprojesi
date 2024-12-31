@@ -1,0 +1,183 @@
+body {
+    background-image: url(dark1.jpg);
+    background-size: 2000px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'New Rocker';
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-size: 35px;
+}
+
+.new-rocker-regular {
+    font-family: "New Rocker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Başlangıçta kutu gizli */
+#kutular {
+    color: red;
+    display: none;  /* Başlangıçta gizli */
+    border-radius: 20px;
+    border-style: solid;
+    border-color: red;
+    width: 450px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;  /* Sabit pozisyon */
+    bottom: -220px;
+    left: 21%;
+    opacity: 0; /* Başlangıçta görünmez */
+    animation: kutuGoster 0.5s ease forwards; /* Animasyon */
+}
+
+/* Kutu görünür olduğunda animasyon başlasın */
+@keyframes kutuGoster {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5); /* Başlangıçta küçülmüş şekilde */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); /* Son hali normalde */
+    }
+}
+
+/* Uyarı mesajı başlangıçta gizli */
+#uyari {
+    color: red;
+    display: none;  /* Başlangıçta gizli */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+/* Şifreyi girme alanı ve butonun stili */
+input, button {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Metin kutusunda yer alan yazı */
+p {
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 40%;
+    left: 52%;
+    transform: translate(-52%, -50%);
+}
+
+h4 {
+    color: red;
+    position: relative;
+    top: 100px;
+    left: 350px;
+}
+
+#pisayısı {
+    color: rgb(216, 216, 216);
+    margin-right: 5000px;
+    text-align: right;
+    padding-left: 800px;
+    bottom: 55px;
+    font-size: large;
+}
+
+#bbb{
+    color: white;
+}
+
+#lnk{
+    color: white;
+}
+
+#q{
+    color: rgb(136, 255, 0);
+    position: relative;
+    left: 200px;
+}
+
+#qq{
+    color: rgb(255, 0, 0);
+    position: relative;
+    top: 600px;
+}
+
+#qqq{
+    color: rgb(255, 0, 85);
+    position: relative;
+    left: 600px;
+}
+
+#qqqq{
+    color: rgb(255, 0, 255);
+    position: relative;
+    left: 600px;
+}
+
+#qqqqq{
+    color: rgb(0, 140, 255);
+    position: relative;
+    left: 80px;
+    font-size: x-large;
+}
+
+#qw{
+    color: rgb(17, 17, 17);
+    position: relative;
+    left: 800px;
+}
+
+#qwa{
+    color: rgb(81, 255, 0);
+    position: relative;
+    left: 800px;
+    font-size: xx-large;
+}
+
+#qws{
+    color: rgb(255, 187, 0);
+    position: relative;
+    left: 400px;
+    font-size: xx-large;
+}
+
+#qwe{
+    color: rgb(251, 255, 0);
+    position: relative;
+    left: 400px;
+    top: 300px;
+    font-size: x-large;
+}
+
+#dvm{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-size: xx-large;
+}
+
+#za{
+    color: white;
+    font-family: "New Rocker", serif;
+}
