@@ -1,6 +1,6 @@
 function kontrolEt() {
     var sifre = document.getElementById("sifre").value;  // Kullanıcının girdiği şifreyi al
-    var dogruSifre = "314";  // Doğru şifre
+    var dogruSifre = "514";  // Doğru şifre
 
     // Şifreyi kontrol et
     if (sifre === dogruSifre) {
